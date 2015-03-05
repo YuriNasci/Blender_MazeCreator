@@ -14,11 +14,8 @@ class Maze:
         BAIXO, DIREITA, CIMA, ESQUERDA = 0, 1, 2, 3
         pilhaCaminhoSeguido = []
         podeConstruir = True
-        # Definindo os valores iniciais de "x" e "y":
-        #  - O valor de "x" será definido de forma completamente aleatória (de 0 ao número de linhas)
+        # A "entrada" do labirinto é construída, no caso será selecionada uma borda aleatória.
         x = xInicio = random.randrange(0, self.lin)
-        #  - Já o valor de "y" será influenciado pelo valor de "x"
-        #  - Se o valor de x for 0 ou o "número de linhas - 1" quer dizer que será uma borda então o valor de y não deve gerar uma diagonal
         y = yInicio = random.randrange(1, self.col - 1) if (x == 0 or x == self.lin - 1) else random.randrange(0,2) * (self.col - 1)
         self.maze[x, y] = 1
         
