@@ -4,7 +4,7 @@ from Maze import Maze
 
 bl_info = \
         {
-            "name" : "Maze Maker",
+            "name" : "Maze Creator",
             "author" : "Yuri Alves Nascimento <yurinascimento@outlook.com>",
             "version" : (1, 0, 0),
             "blender" : (2, 7, 3),
